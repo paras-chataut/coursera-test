@@ -12,30 +12,34 @@ h1 {
   margin: 1.2em;
   text-align: center;
 }
-
-article{
-  float: left;
-  padding: 5px;
+.article-div{
   width: 33.3%;
-  border: 10px solid;
-  border-color: white;
+  float: left;
+
+}
+article{
+  padding: 5px;
+  margin: 15px;
+  border: 1px solid black;
   position: relative;
-}
-.article1{
-  background-color: yellow;
-}
-.article2{
-  background-color: orange;
-}
-.article3{
   background-color: pink;
 }
+#article1Title{
+  background-color: yellow;
+}
+#article2Title{
+  background-color: orange;
+}
+#article3Title{
+  background-color: silver;
+}
+
 .sec1Heading{
     position: absolute;
     padding: 0px 15px 0px 15px;
     right: 0px;
     top: 0px;
-    border: 2px solid;
+    border: 1px solid black;
 }
 div.sec1Heading h2 {
   position: static;
@@ -70,10 +74,10 @@ p {
   .first_image{
     display: none;
   }
-  article{
+  .article-div{
     width: 50%;
   }
-  article.article3{
+  #article3Div{
     width: 100%;
   }
 }
@@ -86,7 +90,7 @@ p {
   .first_image{
     display: none;
   }
-  article{
+  .article-div{
     width: 100%;
   }
 }

@@ -1,0 +1,92 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  font-family: Arial, serif;
+  font-size: 16px;
+  margin: 15px;
+}
+h1 {
+  font-size: 2.5em;
+  color: maroon;
+  margin: 1.2em;
+  text-align: center;
+}
+
+article{
+  float: left;
+  padding: 5px;
+  width: 33.3%;
+  border: 10px solid;
+  border-color: white;
+  position: relative;
+}
+.article1{
+  background-color: yellow;
+}
+.article2{
+  background-color: orange;
+}
+.article3{
+  background-color: pink;
+}
+.sec1Heading{
+    position: absolute;
+    padding: 0px 15px 0px 15px;
+    right: 0px;
+    top: 0px;
+    border: 2px solid;
+}
+div.sec1Heading h2 {
+  position: static;
+  font-size: 24px;
+  color: green;
+  text-align: center;
+  margin: 0em .5em 0em .5em;
+}
+
+p {
+  font-size: 1.2em;
+  margin: 25px 5px 5px 5px;
+  padding: 10px;
+  text-align: justify;
+}
+.first_letter{
+  display: none;
+}
+.first_image{
+  float: left;
+}
+
+/*designing for the desktop*/
+/*no need to design this coze default will be the desktop*/
+
+
+/*Designing for the tablet*/
+@media (min-width: 768px) and (max-width:991px) {
+  .first_letter{
+    display: inline;
+  }
+  .first_image{
+    display: none;
+  }
+  article{
+    width: 50%;
+  }
+  article.article3{
+    width: 100%;
+  }
+}
+
+/*Designing for the mobile*/
+@media (max-width: 767px) {
+  .first_letter{
+    display: inline;
+  }
+  .first_image{
+    display: none;
+  }
+  article{
+    width: 100%;
+  }
+}
